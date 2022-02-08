@@ -4,9 +4,26 @@ nacos:
     addr: localhost:8848
     namespace: junode
 spring:
+  redis:
+    host: localhost
+    port: 6379
   application:
     name: edu-gateway-boot
   cloud:
+    gateway:
+      routes:
+        - id: lagou-user
+          uri: lb://lagou-service-user/
+          predicates:
+            - Path=/api/user/**
+        - id: lagou-code
+          uri: lb://lagou-service-code/
+          predicates:
+            - Path=/api/code/**
+        - id: lagou-email
+          uri: lb://lagou-service-email/
+          predicates:
+            - Path=/api/email/**
     nacos:
       discovery:
         server-addr: ${nacos.server.addr}
@@ -21,3 +38,20 @@ spring:
   main:
     allow-bean-definition-overriding: true
   port: 8881
+
+lagou:
+  cloud:
+    exclude:
+      urls:
+        - /api/user/register/
+        - /api/user/login/
+        - /api/user/isRegistered/
+        - /api/code/create/
+    ip-black:
+      interfacePaths:
+        - interfacePath: /api/user/register/
+          time: 60
+          count: 10
+        - interfacePath: /api/user/login/
+          time: 60
+          count: 6
