@@ -1,0 +1,23 @@
+
+nacos:
+  server:
+    addr: localhost:8848
+    namespace: junode
+spring:
+  application:
+    name: edu-gateway-boot
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server.addr}
+        namespace: ${nacos.server.namespace}
+      config:
+        server-addr: ${nacos.server.addr}
+        enabled: false
+        namespace: ${nacos.server.namespace}
+        extConfig[0]:
+          group: TEST
+          dataId: application.properties
+  main:
+    allow-bean-definition-overriding: true
+  port: 8881
