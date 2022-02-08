@@ -19,7 +19,7 @@ import java.util.Date;
  * @since 2020-06-28
  */
 
-//@Data
+@Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("user_phone_verification_code")
 public class VerificationCode implements Serializable {
@@ -56,51 +56,4 @@ public class VerificationCode implements Serializable {
     private Integer checkTimes;
 
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getVerificationCode() {
-        return verificationCode;
-    }
-
-    public void setVerificationCode(String verificationCode) {
-        this.verificationCode = verificationCode;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Boolean getIsCheck() {
-        return isCheck;
-    }
-
-    public void setIsCheck(Boolean check) {
-        isCheck = check;
-    }
-
-    public Integer getCheckTimes() {
-        return checkTimes;
-    }
-
-    public void setCheckTimes(Integer checkTimes) {
-        this.checkTimes = checkTimes;
-    }
 }

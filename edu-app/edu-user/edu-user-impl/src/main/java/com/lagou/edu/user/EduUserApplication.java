@@ -15,10 +15,10 @@ import org.springframework.context.annotation.Bean;
 @EnableDiscoveryClient
 @MapperScan("com.lagou.edu.user.mapper")
 @Slf4j
-public class LagouEduUserApplication {
+public class EduUserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LagouEduUserApplication.class, args);
+        SpringApplication.run(EduUserApplication.class, args);
     }
 
 

@@ -5,6 +5,7 @@ import com.lagou.edu.common.result.ResponseDTO;
 import com.lagou.edu.user.service.IVerificationCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author felix
  * @since 2020-06-28
  */
-/*@RestController
-@RequestMapping("/user/vfcode")*/
+@RestController
+@RequestMapping("/user/vfcode")
 public class UserPhoneVerificationCodeController {
 
     @Autowired

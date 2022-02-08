@@ -16,6 +16,7 @@ public class VerificationCodeRemoteServiceImpl implements VerificationCodeRemote
     @Autowired
     private IVerificationCodeService verificationCodeService;
 
+    @Override
     @RequestMapping(value = "/sendCode")
     public ResponseDTO sendCode(String telephone) {
         ResponseDTO responseDTO = null;
@@ -29,6 +30,7 @@ public class VerificationCodeRemoteServiceImpl implements VerificationCodeRemote
         return responseDTO;
     }
 
+    @Override
     @RequestMapping(value = "/checkCode")
     /*
         验证码不正确,设置状态码为203
