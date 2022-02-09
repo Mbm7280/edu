@@ -14,8 +14,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @Description: 将带有html标签的字符串转换成纯文本
- * @Author leo
- * @Date 2015-8-13 下午3:37:47
+ * * @Date 2015-8-13 下午3:37:47
  */
 public final class HtmlToTextUtil implements Serializable {
 

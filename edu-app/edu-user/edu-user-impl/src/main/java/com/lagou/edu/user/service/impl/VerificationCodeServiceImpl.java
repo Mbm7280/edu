@@ -18,8 +18,7 @@ import java.util.Date;
  *  服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-28
+ * * @since 2020-06-28
  */
 @Service
 public class VerificationCodeServiceImpl extends ServiceImpl<VerificationCodeMapper, VerificationCode> implements IVerificationCodeService {

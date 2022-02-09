@@ -13,8 +13,7 @@ import lombok.EqualsAndHashCode;
  * 
  * </p>
  *
- * @author leo
- * @since 2020-06-27
+ * * @since 2020-06-27
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

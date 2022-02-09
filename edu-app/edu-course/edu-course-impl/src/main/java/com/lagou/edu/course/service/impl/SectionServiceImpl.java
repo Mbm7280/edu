@@ -11,8 +11,7 @@ import org.springframework.stereotype.Service;
  *  服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-17
+ * * @since 2020-06-17
  */
 @Service
 public class SectionServiceImpl extends ServiceImpl<SectionMapper, Section> implements ISectionService {

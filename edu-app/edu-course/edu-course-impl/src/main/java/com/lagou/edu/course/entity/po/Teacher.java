@@ -13,8 +13,7 @@ import java.time.LocalDateTime;
  * 
  * </p>
  *
- * @author leo
- * @since 2020-07-03
+ * * @since 2020-07-03
  */
 ////@Data
 @EqualsAndHashCode(callSuper = false)

@@ -8,8 +8,7 @@ import com.lagou.edu.course.entity.po.Teacher;
  *  Mapper 接口
  * </p>
  *
- * @author leo
- * @since 2020-06-11
+ * * @since 2020-06-11
  */
 public interface TeacherMapper extends BaseMapper<Teacher> {
 

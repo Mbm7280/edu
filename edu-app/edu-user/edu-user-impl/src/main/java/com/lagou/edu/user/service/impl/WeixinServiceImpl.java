@@ -11,8 +11,7 @@ import org.springframework.stereotype.Service;
  *  服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-27
+ * * @since 2020-06-27
  */
 @Service
 public class WeixinServiceImpl extends ServiceImpl<WeixinMapper, Weixin> implements IWeixinService {

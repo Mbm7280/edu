@@ -10,8 +10,7 @@ import com.lagou.edu.course.entity.po.Teacher;
  *  服务类
  * </p>
  *
- * @author leo
- * @since 2020-06-11
+ * * @since 2020-06-11
  */
 public interface ITeacherService extends IService<Teacher> {
 

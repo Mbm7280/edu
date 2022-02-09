@@ -8,8 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author leo
- * @since 2020-06-19
+ * * @since 2020-06-19
  */
 public interface CoursePlayHistoryMapper extends BaseMapper<CoursePlayHistory> {
 

@@ -8,8 +8,7 @@ import com.lagou.edu.user.entity.VerificationCode;
  *  服务类
  * </p>
  *
- * @author leo
- * @since 2020-06-28
+ * * @since 2020-06-28
  */
 public interface IVerificationCodeService extends IService<VerificationCode> {
 

@@ -8,8 +8,7 @@ import com.lagou.edu.user.entity.VerificationCode;
  *  Mapper 接口
  * </p>
  *
- * @author leo
- * @since 2020-06-28
+ * * @since 2020-06-28
  */
 public interface VerificationCodeMapper extends BaseMapper<VerificationCode> {
 

@@ -27,8 +27,7 @@ import java.util.stream.Collectors;
  * 课程节内容 服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-17
+ * * @since 2020-06-17
  */
 @Service
 public class LessonServiceImpl extends ServiceImpl<LessonMapper, Lesson> implements ILessonService {

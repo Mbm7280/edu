@@ -13,8 +13,7 @@ import java.util.List;
  *  前端控制器
  * </p>
  *
- * @author leo
- * @since 2020-06-17
+ * * @since 2020-06-17
  */
 @RestController
 @RequestMapping("/course/section")

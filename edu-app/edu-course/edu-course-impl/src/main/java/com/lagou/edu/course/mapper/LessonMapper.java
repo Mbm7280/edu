@@ -8,8 +8,7 @@ import com.lagou.edu.course.entity.po.Lesson;
  * 课程节内容 Mapper 接口
  * </p>
  *
- * @author leo
- * @since 2020-06-17
+ * * @since 2020-06-17
  */
 public interface LessonMapper extends BaseMapper<Lesson> {
 

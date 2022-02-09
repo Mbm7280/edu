@@ -41,9 +41,16 @@ spring:
     admin:
       client:
         url: http://localhost:9001  # Spring Boot Admin 监控服务器端地址
+        instance:
+          service-base-url: http://localhost:9001
 # 开启监控所有项
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+mybatis:
+  # 配置mapper xml文件所在路径
+  mapper-locations: classpath*:mapper/user/*.xml
+  # 配置映射类所在包名
+  type-aliases-package: com.lagou.edu.user.mapper

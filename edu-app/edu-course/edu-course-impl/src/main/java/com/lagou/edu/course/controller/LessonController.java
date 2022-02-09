@@ -21,8 +21,7 @@ import java.util.stream.Collectors;
  * 课程节内容 前端控制器
  * </p>
  *
- * @author leo
- * @since 2020-06-17
+ * * @since 2020-06-17
  */
 @RestController
 @RequestMapping("/course/lesson")

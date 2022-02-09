@@ -10,8 +10,7 @@ import java.util.Date;
  *
  * </p>
  *
- * @author leo
- * @since 2020-06-27
+ * * @since 2020-06-27
  */
 @Data
 public class WeixinDTO implements Serializable {

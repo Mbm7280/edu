@@ -12,8 +12,7 @@ import java.util.List;
  *
  * </p>
  *
- * @author leo
- * @since 2020-06-11
+ * * @since 2020-06-11
  */
 ////@Data
 @EqualsAndHashCode(callSuper = false)

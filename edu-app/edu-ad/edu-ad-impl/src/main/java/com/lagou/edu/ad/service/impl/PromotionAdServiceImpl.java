@@ -16,8 +16,7 @@ import java.util.List;
  *  服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-18
+ * * @since 2020-06-18
  */
 @Service
 public class PromotionAdServiceImpl extends ServiceImpl<PromotionAdMapper, PromotionAd> implements IPromotionAdService {

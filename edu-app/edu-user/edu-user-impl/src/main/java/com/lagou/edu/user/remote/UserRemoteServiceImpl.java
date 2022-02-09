@@ -10,6 +10,7 @@ import com.lagou.edu.user.api.UserRemoteService;
 import com.lagou.edu.user.api.dto.UserDTO;
 import com.lagou.edu.user.api.param.UserQueryParam;
 import com.lagou.edu.user.entity.User;
+import com.lagou.edu.user.mapper.UserMapper;
 import com.lagou.edu.user.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -17,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -30,8 +32,13 @@ public class UserRemoteServiceImpl implements UserRemoteService {
     @Autowired
     private IUserService userService;
 
+    @Resource
+    private UserMapper userMapper;
+
     @Override
     public UserDTO getUserById(Integer userId) {
+        /*User demo = userMapper.selectById(userId);
+        System.out.println(demo.toString());*/
         User user = this.userService.getById(userId);
         if (null == user) {
             return null;

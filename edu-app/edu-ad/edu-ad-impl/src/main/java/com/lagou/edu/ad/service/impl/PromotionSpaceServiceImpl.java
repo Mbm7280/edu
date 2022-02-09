@@ -12,8 +12,7 @@ import org.springframework.stereotype.Service;
  *  服务实现类
  * </p>
  *
- * @author leo
- * @since 2020-06-18
+ * * @since 2020-06-18
  */
 @Service
 public class PromotionSpaceServiceImpl extends ServiceImpl<PromotionSpaceMapper, PromotionSpace> implements IPromotionSpaceService {

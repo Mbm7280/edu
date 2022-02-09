@@ -11,8 +11,7 @@ import java.util.List;
  *  服务类
  * </p>
  *
- * @author leo
- * @since 2020-06-18
+ * * @since 2020-06-18
  */
 public interface IPromotionAdService extends IService<PromotionAd> {
 

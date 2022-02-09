@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  *  前端控制器
  * </p>
  *
- * @author leo
- * @since 2020-06-18
+ * * @since 2020-06-18
  */
 @RestController
 @RequestMapping("/ad/promotion-space")

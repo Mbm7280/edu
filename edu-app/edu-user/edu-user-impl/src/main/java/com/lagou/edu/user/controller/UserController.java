@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * 前端控制器
  * </p>
  *
- * @author leo
- * @since 2020-06-21
+ * * @since 2020-06-21
  */
 @RestController
 @RequestMapping("/user/")

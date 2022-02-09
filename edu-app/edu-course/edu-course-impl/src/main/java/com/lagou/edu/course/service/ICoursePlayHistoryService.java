@@ -9,8 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author leo
- * @since 2020-06-19
+ * * @since 2020-06-19
  */
 public interface ICoursePlayHistoryService extends IService<CoursePlayHistory> {
 

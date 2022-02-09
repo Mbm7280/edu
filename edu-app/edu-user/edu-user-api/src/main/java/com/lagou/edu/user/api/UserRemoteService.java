@@ -1,6 +1,7 @@
 package com.lagou.edu.user.api;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.lagou.edu.user.api.dto.UserDTO;
 import com.lagou.edu.user.api.param.UserQueryParam;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "${remote.feign.edu-user-boot.name:edu-user-boot}", path = "/user")
-public interface UserRemoteService {
+public interface UserRemoteService{
 
 
     @GetMapping("/getUserById")
