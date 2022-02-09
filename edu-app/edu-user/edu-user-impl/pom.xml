@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>edu-user</artifactId>
-        <groupId>com.lagou.edu</groupId>
+        <groupId>com.junode.edu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -20,7 +20,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-user-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -35,14 +35,19 @@
             <artifactId>spring-cloud-commons</artifactId>
         </dependency>
         <!-- Eureka依赖 -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <!-- config client依赖包-->
+        </dependency>-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+            <version>2.1.1.RELEASE</version>
         </dependency>
         <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
         <dependency>
@@ -147,7 +152,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -158,6 +163,16 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>2.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
     </dependencies>
 

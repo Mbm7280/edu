@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.lagou.edu.commons</groupId>
+        <groupId>com.junode.edu.commons</groupId>
         <artifactId>edu-bom</artifactId>
         <version>0.0.6-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.lagou.edu</groupId>
+    <groupId>com.junode.edu</groupId>
     <artifactId>edu-ad</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -31,7 +31,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.lagou.edu.commons</groupId>
+                <groupId>com.junode.edu.commons</groupId>
                 <artifactId>edu-bom</artifactId>
                 <version>0.0.6-SNAPSHOT</version>
                 <type>pom</type>

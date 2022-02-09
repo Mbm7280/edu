@@ -17,7 +17,7 @@ public class VerificationCodeRemoteServiceImpl implements VerificationCodeRemote
     private IVerificationCodeService verificationCodeService;
 
     @Override
-    @RequestMapping(value = "/sendCode")
+    @RequestMapping(value = "/sendCodeRemote")
     public ResponseDTO sendCode(String telephone) {
         ResponseDTO responseDTO = null;
         try {
@@ -30,12 +30,12 @@ public class VerificationCodeRemoteServiceImpl implements VerificationCodeRemote
         return responseDTO;
     }
 
-    @Override
-    @RequestMapping(value = "/checkCode")
     /*
-        验证码不正确,设置状态码为203
-        验证码过期,设置状态码为204
-     */
+      验证码不正确,设置状态码为203
+      验证码过期,设置状态码为204
+   */
+    @Override
+    @RequestMapping(value = "/checkCodeRemote")
     public ResponseDTO checkCode(String telephone, String code) {
         ResponseDTO responseDTO = null;
         try {

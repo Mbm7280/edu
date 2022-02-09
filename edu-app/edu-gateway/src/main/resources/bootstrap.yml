@@ -1,4 +1,5 @@
-
+server:
+  port: 8881
 nacos:
   server:
     addr: localhost:8848
@@ -37,7 +38,6 @@ spring:
           dataId: application.properties
   main:
     allow-bean-definition-overriding: true
-  port: 8881
 
 lagou:
   cloud:

@@ -2,6 +2,9 @@ package com.lagou.edu.pay.seata;
 
 import javax.sql.DataSource;
 
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.transaction.SpringManagedTransactionFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -12,6 +15,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 import io.seata.rm.datasource.DataSourceProxy;
 import io.seata.spring.annotation.GlobalTransactionScanner;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
  * @Description:(数据源代理)   
@@ -50,15 +54,15 @@ public class DataSourceConfiguration {
         return new DataSourceProxy(druidDataSource);
     }
 
-//    @Bean
-//    public SqlSessionFactory sqlSessionFactory(DataSourceProxy dataSourceProxy)throws Exception{
-//        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-//        sqlSessionFactoryBean.setDataSource(dataSourceProxy);
-//        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver()
-//                .getResources("classpath*:/mapper/*.xml"));
-//        sqlSessionFactoryBean.setTransactionFactory(new SpringManagedTransactionFactory());
-//        return sqlSessionFactoryBean.getObject();
-//    }
+    @Bean
+    public SqlSessionFactory sqlSessionFactory(DataSourceProxy dataSourceProxy)throws Exception{
+        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+        sqlSessionFactoryBean.setDataSource(dataSourceProxy);
+        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver()
+                .getResources("classpath*:/mapper/*.xml"));
+        sqlSessionFactoryBean.setTransactionFactory(new SpringManagedTransactionFactory());
+        return sqlSessionFactoryBean.getObject();
+    }
 
 }
 

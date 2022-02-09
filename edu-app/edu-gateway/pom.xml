@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.lagou.edu.commons</groupId>
+        <groupId>com.junode.edu.commons</groupId>
         <artifactId>edu-bom</artifactId>
         <version>0.0.6-SNAPSHOT</version>
     </parent>
@@ -23,7 +23,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -38,7 +38,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>authentication-client</artifactId>
             <version>0.0.3-SNAPSHOT</version>
         </dependency>
@@ -94,6 +94,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
@@ -182,7 +183,7 @@
                  <scope>import</scope>
              </dependency>
             <dependency>
-                <groupId>com.lagou.edu.commons</groupId>
+                <groupId>com.junode.edu.commons</groupId>
                 <artifactId>edu-bom</artifactId>
                 <version>0.0.6-SNAPSHOT</version>
                 <type>pom</type>

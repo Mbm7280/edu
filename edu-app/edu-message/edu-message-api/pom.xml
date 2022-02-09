@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.lagou.edu</groupId>
+        <groupId>com.junode.edu</groupId>
         <artifactId>edu-message</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.lagou.edu</groupId>
+    <groupId>com.junode.edu</groupId>
     <artifactId>edu-message-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -22,7 +22,7 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>

@@ -2,12 +2,12 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.lagou.edu.commons</groupId>
+        <groupId>com.junode.edu.commons</groupId>
         <artifactId>edu-bom</artifactId>
         <version>0.0.6-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.lagou.edu</groupId>
+    <groupId>com.junode.edu</groupId>
     <artifactId>edu-oauth</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <artifactId>edu-user-api</artifactId>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--自省和监控的集成功能-->
@@ -99,7 +99,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -232,7 +232,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.lagou.edu.commons</groupId>
+                <groupId>com.junode.edu.commons</groupId>
                 <artifactId>edu-bom</artifactId>
                 <version>0.0.6-SNAPSHOT</version>
                 <type>pom</type>

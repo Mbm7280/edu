@@ -14,14 +14,14 @@ public interface VerificationCodeRemoteService {
      * @param telephone
      * @return
      */
-    @RequestMapping("sendCode")
+    @RequestMapping("sendCodeRemote")
     public ResponseDTO sendCode(@RequestParam("telephone") String telephone);
 
     /**
      * 判断验证码是否正确
      * @return
      */
-    @RequestMapping("checkCode")
+    @RequestMapping("checkCodeRemote")
     public ResponseDTO checkCode(@RequestParam("telephone")String telephone,
                                  @RequestParam("code")String code);
 

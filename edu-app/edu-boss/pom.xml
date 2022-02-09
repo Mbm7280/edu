@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.lagou.edu.commons</groupId>
+        <groupId>com.junode.edu.commons</groupId>
         <artifactId>edu-bom</artifactId>
         <version>0.0.6-SNAPSHOT</version>
     </parent>
 
     <version>0.0.1-SNAPSHOT</version>
-    <groupId>com.lagou.edu</groupId>
+    <groupId>com.junode.edu</groupId>
     <artifactId>edu-boss</artifactId>
     <packaging>jar</packaging>
 
@@ -26,23 +26,23 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-user-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-comment-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-message-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--课程的操作-->
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-course-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -135,7 +135,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -189,7 +189,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>authentication-client</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -204,7 +204,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.lagou.edu.commons</groupId>
+                <groupId>com.junode.edu.commons</groupId>
                 <artifactId>edu-bom</artifactId>
                 <version>0.0.6-SNAPSHOT</version>
                 <type>pom</type>

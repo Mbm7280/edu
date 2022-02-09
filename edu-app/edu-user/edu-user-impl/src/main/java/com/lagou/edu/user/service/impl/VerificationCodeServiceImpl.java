@@ -24,6 +24,8 @@ import java.util.Date;
 @Service
 public class VerificationCodeServiceImpl extends ServiceImpl<VerificationCodeMapper, VerificationCode> implements IVerificationCodeService {
 
+
+
     @Override
     public boolean save(String telephone) {
 

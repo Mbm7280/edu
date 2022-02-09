@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
@@ -15,8 +14,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 //@EnableCircuitBreaker
 @EnableMethodCache(basePackages = "com.lagou.edu")
 @EnableCreateCacheAnnotation
-public class LagouGatewayApplication {
+public class GatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LagouGatewayApplication.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
 }

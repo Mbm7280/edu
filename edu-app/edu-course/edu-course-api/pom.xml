@@ -5,7 +5,7 @@
 
     <parent>
         <artifactId>edu-course</artifactId>
-        <groupId>com.lagou.edu</groupId>
+        <groupId>com.junode.edu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -23,7 +23,7 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>

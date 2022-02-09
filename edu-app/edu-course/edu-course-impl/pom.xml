@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>edu-course</artifactId>
-        <groupId>com.lagou.edu</groupId>
+        <groupId>com.junode.edu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,7 +13,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <exclusions>
@@ -36,7 +36,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-course-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -158,7 +158,7 @@
         </dependency>
         <!--订单-->
       <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-order-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
