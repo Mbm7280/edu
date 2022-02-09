@@ -83,7 +83,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-common</artifactId>
             <version>0.0.3-SNAPSHOT</version>
         </dependency>

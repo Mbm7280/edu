@@ -13,7 +13,7 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true  #服务实例中显示ip，而不是显示主机名（兼容老的eureka版本）
-    # 实例名称： 192.168.1.103:lagou-service-resume:8080，我们可以自定义它
+    # 实例名称： 192.168.1.103:junode-service-resume:8080，我们可以自定义它
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
     #服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除 默认90s
     lease-expiration-duration-in-seconds: 9

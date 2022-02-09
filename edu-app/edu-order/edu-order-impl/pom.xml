@@ -219,7 +219,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
 				<version>2.4.2</version>
                 <configuration>
-                    <mainClass>com.lagou.edu.order.LagouEduOrderApplication</mainClass>
+                    <mainClass>com.junode.edu.order.EduOrderApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

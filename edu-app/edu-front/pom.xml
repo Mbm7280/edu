@@ -163,7 +163,7 @@
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.lagou.edu</groupId>
+            <groupId>com.junode.edu</groupId>
             <artifactId>edu-order-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -228,7 +228,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.lagou.edu.commons</groupId>
+                <groupId>com.junode.edu.commons</groupId>
                 <artifactId>edu-bom</artifactId>
                 <version>0.0.6-SNAPSHOT</version>
                 <type>pom</type>

@@ -213,7 +213,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.4.2</version>
                 <configuration>
-                    <mainClass>com.lagou.edu.course.LagouEduCourseApplication</mainClass>
+                    <mainClass>com.junode.edu.course.EduCourseApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -15,35 +15,10 @@
     <version>0.0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <!--    <url>http://git.lagou.com/edu-java/edu-bom</url>-->
-    <!--
-
-        <licenses>
-            <license>
-                <name>Apache License, Version 2.0</name>
-                <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                <distribution>repo</distribution>
-            </license>
-        </licenses>
-
-        <scm>
-            <url>http://git.lagou.com/edu-java/edu-bom</url>
-            <connection>scm:git:http://git.lagou.com/edu-java/edu-bom.git</connection>
-            <developerConnection>scm:git:http://git.lagou.com/edu-java/edu-bom.git</developerConnection>
-            <tag>HEAD</tag>
-        </scm>
-    -->
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!--<developers>
-        <developer>
-            <name>leo</name>
-            <email>leo@lagou.com</email>
-        </developer>
-    </developers>-->
 
     <dependencyManagement>
         <dependencies>

@@ -6,7 +6,7 @@ variables:
     remoteUser: "root"
     stopScript: "stop.sh"
     startScript: "start.sh"
-    mvnPath1: "/apps/apache-maven-3.6.3/repository/com/lagou/edu /root/.m2/repository/com/lagou/edu"
+    mvnPath1: "/apps/apache-maven-3.6.3/repository/com/junode/edu /root/.m2/repository/com/junode/edu"
 
 before_script:
   - pwd
