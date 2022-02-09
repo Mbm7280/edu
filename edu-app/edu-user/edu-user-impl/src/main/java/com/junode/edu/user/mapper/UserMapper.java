@@ -2,6 +2,7 @@ package com.junode.edu.user.mapper;
 
 import com.junode.edu.user.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>

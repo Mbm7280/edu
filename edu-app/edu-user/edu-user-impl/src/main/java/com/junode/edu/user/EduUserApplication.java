@@ -23,7 +23,7 @@ import javax.sql.DataSource;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @EnableDiscoveryClient
-@MapperScan("com.lagou.edu.user.mapper")
+@MapperScan("com.junode.edu.user.mapper")
 @Slf4j
 public class EduUserApplication {
 

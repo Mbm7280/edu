@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @author : chenrg
  * @create 2020/7/13 19:57
  **/
-//@Data
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString

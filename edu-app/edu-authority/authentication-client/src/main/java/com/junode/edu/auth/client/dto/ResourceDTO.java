@@ -3,6 +3,7 @@ package com.junode.edu.auth.client.dto;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -14,7 +15,7 @@ import lombok.ToString;
  **/
 
 @ApiModel("资源信息")
-//@Data
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString

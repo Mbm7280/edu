@@ -13,7 +13,7 @@ import java.util.Date;
  * @author : chenrg
  * @create 2020/7/13 18:19
  **/
-//@Data
+@Data
 @ToString
 public class BaseQueryParam implements Serializable {
 

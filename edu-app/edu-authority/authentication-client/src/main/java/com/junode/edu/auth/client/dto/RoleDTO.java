@@ -2,6 +2,7 @@ package com.junode.edu.auth.client.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -13,7 +14,7 @@ import lombok.ToString;
  * @create 2020/7/9 11:10
  **/
 @ApiModel("角色信息")
-//@Data
+@Data
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode(callSuper = true)

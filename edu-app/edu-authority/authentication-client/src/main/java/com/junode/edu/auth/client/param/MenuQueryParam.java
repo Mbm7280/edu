@@ -3,11 +3,12 @@ package com.junode.edu.auth.client.param;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @ApiModel("菜单查询表单")
-//@Data
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString

@@ -49,8 +49,3 @@ management:
     web:
       exposure:
         include: '*'
-mybatis:
-  # 配置mapper xml文件所在路径
-  mapper-locations: classpath*:mapper/user/*.xml
-  # 配置映射类所在包名
-  type-aliases-package: com.lagou.edu.user.mapper

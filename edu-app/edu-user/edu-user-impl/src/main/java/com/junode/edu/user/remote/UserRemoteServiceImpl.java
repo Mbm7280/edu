@@ -6,7 +6,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.junode.edu.user.entity.User;
-import com.junode.edu.user.mapper.UserMapper;
 import com.junode.edu.common.date.DateUtil;
 import com.junode.edu.user.api.UserRemoteService;
 import com.junode.edu.user.api.dto.UserDTO;
@@ -32,13 +31,9 @@ public class UserRemoteServiceImpl implements UserRemoteService {
     @Autowired
     private IUserService userService;
 
-    @Resource
-    private UserMapper userMapper;
-
     @Override
     public UserDTO getUserById(Integer userId) {
-        /*User demo = userMapper.selectById(userId);
-        System.out.println(demo.toString());*/
+
         User user = this.userService.getById(userId);
         if (null == user) {
             return null;
