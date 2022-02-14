@@ -18,9 +18,7 @@ import io.seata.spring.annotation.GlobalTransactionScanner;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
- * @Description:(数据源代理)   
- * @author: ma wei long
- * @date:   2020年7月28日 上午12:24:01
+ * @Description:(数据源代理)
  */
 @Configuration
 public class DataSourceConfiguration {

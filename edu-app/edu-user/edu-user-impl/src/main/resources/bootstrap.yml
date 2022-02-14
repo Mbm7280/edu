@@ -37,15 +37,18 @@ spring:
     leaseTime: 60 #已获取锁后自动释放时间（默认：60，单位：秒）
   #    cluster-server:
   #      node-addresses: #redis集群配置 如 127.0.0.1:7000,127.0.0.1:7001，127.0.0.1:7002
-  boot:
-    admin:
-      client:
-        url: http://localhost:9001  # Spring Boot Admin 监控服务器端地址
-        instance:
-          service-base-url: http://localhost:9001
+
+# spring boot admin服务监控屏蔽 start
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:9001  # Spring Boot Admin 监控服务器端地址
+#        instance:
+#          service-base-url: http://localhost:9001
 # 开启监控所有项
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+# spring boot admin服务监控屏蔽 end

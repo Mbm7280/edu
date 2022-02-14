@@ -1,9 +1,9 @@
 package com.junode.edu.course.job;
 
 import com.junode.edu.course.service.ICourseService;
-import com.xxl.job.core.biz.model.ReturnT;
-import com.xxl.job.core.handler.annotation.XxlJob;
-import com.xxl.job.core.log.XxlJobLogger;
+//import com.xxl.job.core.biz.model.ReturnT;
+//import com.xxl.job.core.handler.annotation.XxlJob;
+//import com.xxl.job.core.log.XxlJobLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,10 +22,10 @@ public class CourseAutoOnlineJob {
     /**
      * 1、简单任务示例（Bean模式）
      */
-    @XxlJob("courseAutoOnlineJobHandler")
+    /*@XxlJob("courseAutoOnlineJobHandler")
     public ReturnT<String> execute(String param) throws Exception {
         XxlJobLogger.log("Execute course auto online.");
         courseService.courseAutoOnline();
         return ReturnT.SUCCESS;
-    }
+    }*/
 }

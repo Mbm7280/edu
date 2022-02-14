@@ -1,29 +1,76 @@
+server:
+  port: 30006
+nacos:
+  server:
+    addr: localhost:8848
+    namespace: junode
+
 spring:
+  redis:
+    host: localhost
+    port: 6379
   application:
     name: edu-course-boot
   cloud:
-    config:
+    nacos:
       discovery:
-        enabled: true
-        service-id: edu-config-boot
-      name: ${spring.application.name}
-      profile: @profile@
+        server-addr: ${nacos.server.addr}
+        namespace: ${nacos.server.namespace}
+      config:
+        server-addr: ${nacos.server.addr}
+        enabled: false
+        namespace: ${nacos.server.namespace}
+        extConfig[0]:
+          group: TEST
+          dataId: application.properties
   main:
     allow-bean-definition-overriding: true
+  # 当spring MVC找不到对应的controller来处理请求时，就不会使用默认的方式处理了，直接抛出异常，就会被ExceptionAdviceHandler 捕获到；到这里自定义异常处理结束
+  mvc:
+    throw-exception-if-no-handler-found: true
+  datasource:
+    # 数据库后边修改
+    url: jdbc:mysql://localhost:3306/edu?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=GMT
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      jwt:
+        signingKey: 123456
 
-#注册到Eureka服务中心
-eureka:
-  client:
-    service-url:
-      # 注册到集群，就把多个Eurekaserver地址使用逗号连接起来即可；注册到单实例（非集群模式），那就写一个就ok
-      defaultZone: @eureka.host@
-    #eureka client刷新本地缓存时间 默认30s
-    registry-fetch-interval-seconds: 5
-  instance:
-    prefer-ip-address: true  #服务实例中显示ip，而不是显示主机名（兼容老的eureka版本）
-    # 实例名称
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-    #服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除 默认90s
-    lease-expiration-duration-in-seconds: 9
-    #服务刷新时间配置，每隔这个时间会主动心跳一次 默认30s
-    lease-renewal-interval-in-seconds: 3
+  klock:
+    address: 127.0.0.1:6379 #redis链接地址
+    #password: 2021 #redis密码
+    database: 1 #redis数据索引
+    waitTime: 60 #获取锁最长阻塞时间（默认：60，单位：秒）
+    leaseTime: 60 #已获取锁后自动释放时间（默认：60，单位：秒）
+  #    cluster-server:
+  #      node-addresses: #redis集群配置 如 127.0.0.1:7000,127.0.0.1:7001，127.0.0.1:7002
+
+
+# 配置xml文件所在位置
+mybatis-plus:
+  mapper-locations: classpath*:mapper/course/*Mapper.xml
+
+xxl:
+  job:
+    executor:
+      appname: appname01
+      address: 'door'
+      ip: localhost
+      port: 30015
+      logpath: /home/demo
+      logretentiondays: 3
+    accessToken: 123456
+    admin:
+      addresses: 'door'
+
+#rocketmq
+rocketmq:
+  name-server: localhost:9876

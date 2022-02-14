@@ -126,6 +126,7 @@ public class AdRemoteServiceImpl implements AdRemoteService {
 
 
     //获取所有的广告
+    @Override
     @RequestMapping("/getAdList")
     public List<PromotionAdDTO> getAdList(){
         List<PromotionAdDTO> adDTOList = new ArrayList<>();
@@ -165,7 +166,7 @@ public class AdRemoteServiceImpl implements AdRemoteService {
 
 
     @Override
-    @GetMapping("/getAllAds")
+    @GetMapping("/getAllAdsInfo")
     public List<PromotionSpaceDTO> getAllAds(String[] spaceKeys) {
         List<PromotionSpaceDTO> promotionSpaceDTOList = new ArrayList<>();
 

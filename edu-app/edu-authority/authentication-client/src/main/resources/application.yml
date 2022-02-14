@@ -3,7 +3,9 @@ spring:
     oauth2:
       jwt:
         signingKey: 123456
+
+# 这里测试，将客户微服务的鉴权屏蔽
 gate:
   ignore:
     authentication:
-      startWith: /oauth,/open
+      startWith: /oauth,/open,/user

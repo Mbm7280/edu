@@ -16,7 +16,7 @@ import java.util.List;
 @FeignClient(name = "${remote.feign.edu-ad-boot.name:edu-ad-boot}", path = "/ad")
 public interface AdRemoteService {
 
-    @GetMapping("/getAllAds")
+    @GetMapping("/getAllAdsInfo")
     List<PromotionSpaceDTO> getAllAds(@RequestParam("spaceKeys") String[] spaceKeys);
 
 
